@@ -1,4 +1,4 @@
-import os
+import os MAX LOH
 os.system("git pull")
 os.system("cp -r /home/tbm/eclipse-workspace/UserChat/src /home/tbm/git/userchat")
 a = input("Commit: ")
