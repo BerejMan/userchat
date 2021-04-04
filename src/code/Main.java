@@ -15,10 +15,15 @@ public class Main {
 //		BigInteger key = new BigInteger(src);
 //		
 //		BigInteger text = new BigInteger("997002999"); //997002999
+		
+		Scanner log = new Scanner(System.in);
+		System.out.print("Enter text:");
+		String ent = log.nextLine();
+		System.out.println();
 
 		BigInteger key = new BigInteger("0");
 		EncryptTBM obj = new EncryptTBM(key.toString());
-		String TheText = "login";
+		String TheText = ent;
 		System.out.println("Text: " + TheText);
 		String coded = obj.EncodingTextToInt(TheText);
 		System.out.println("Coded: " + coded);
@@ -26,7 +31,6 @@ public class Main {
 		System.out.println("Enc: " + Encrypted);
 		String Decrypted = obj.DecodingIntToText(coded);
 		System.out.println(Decrypted);
-		//TEST GIT
 		
 	
 		
