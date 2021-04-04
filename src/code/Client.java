@@ -22,7 +22,7 @@ public class Client {
                
                 out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
 
-                System.out.println("Вы что-то хотели сказать? Введите это здесь:");
+                System.out.println("Say");
               
                 String word = reader.readLine();
                 
@@ -31,7 +31,7 @@ public class Client {
                 String serverWord = in.readLine(); 
                 System.out.println(serverWord);
             } finally { 
-                System.out.println("Клиент был закрыт...");
+                System.out.println("Client close");
                 clientSocket.close();
                 in.close();
                 out.close();
