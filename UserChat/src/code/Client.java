@@ -14,7 +14,7 @@ public class Client {
         try {
             try {
                 
-                clientSocket = new Socket("192.168.0.12", 4004);
+                clientSocket = new Socket("192.168.0.12", 4004); //Test Eclipse
                 
                 reader = new BufferedReader(new InputStreamReader(System.in));
                
