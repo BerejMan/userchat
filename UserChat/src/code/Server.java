@@ -2,6 +2,7 @@ package code;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Server {
 
@@ -11,6 +12,7 @@ public class Server {
     private static BufferedWriter out; 
 
     public static void main(String[] args) {
+    	Scanner log = new Scanner(System.in);
         try {
             try  {
                 server = new ServerSocket(4004); 
@@ -24,10 +26,10 @@ public class Server {
                   
                     out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
 
-                    String word = in.readLine(); 
+                    String word = log.nextLine();
                     System.out.println(word);
                     
-                    out.write("Hello it is server: " + word + "\n");
+                    out.write("Sys Admin says: " + word + "\n");
                     out.flush(); 
 
                 } finally { 
