@@ -14,7 +14,7 @@ public class Server {
         try {
             try  {
                 server = new ServerSocket(4004); 
-                System.out.println("Сервер запущен!"); 
+                System.out.println("Server Started"); 
                 clientSocket = server.accept(); 
                
                 try { 
@@ -27,7 +27,7 @@ public class Server {
                     String word = in.readLine(); 
                     System.out.println(word);
                     
-                    out.write("Привет, это Сервер! Подтверждаю, вы написали : " + word + "\n");
+                    out.write("Hello it is server: " + word + "\n");
                     out.flush(); 
 
                 } finally { 
@@ -37,7 +37,7 @@ public class Server {
                     out.close();
                 }
             } finally {
-                System.out.println("Сервер закрыт!");
+                System.out.println("Server Closed");
                     server.close();
             }
         } catch (IOException e) {
