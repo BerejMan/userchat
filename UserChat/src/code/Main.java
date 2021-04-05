@@ -31,7 +31,7 @@ public class Main {
 		System.out.println("Enc: " + Encrypted);
 		String Decrypted = obj.DecodingIntToText(coded);
 		System.out.println(Decrypted);
-		System.out.
+		
 		
 	
 		
