@@ -25,8 +25,9 @@ public class Server {
                     in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                   
                     out = new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream()));
-
-                    String word = log.nextLine();
+                    
+                    
+                    String word = in.readLine();
                     System.out.println(word);
                     
                     out.write("Sys Admin says: " + word + "\n");
