@@ -14,7 +14,7 @@ public class Client {
         try {
             try {
                 
-                clientSocket = new Socket("192.168.0.12", 4004); //MAXTEST
+                clientSocket = new Socket("localhost", 4004); //MAXTEST
                 
                 reader = new BufferedReader(new InputStreamReader(System.in));
                
