@@ -1,6 +1,7 @@
 package code;
 import java.io.*;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class Client {
 
@@ -11,10 +12,13 @@ public class Client {
     private static BufferedWriter out; 
 
     public static void main(String[] args) {
+    	Scanner log = new Scanner(System.in);
+    	
         try {
             try {
-                
-                clientSocket = new Socket("localhost", 4004); //MAXTEST234
+            	System.out.print("IP connect to: ");
+                String ent = log.nextLine();
+                clientSocket = new Socket(ent, 4004); 
                 
                 reader = new BufferedReader(new InputStreamReader(System.in));
                
