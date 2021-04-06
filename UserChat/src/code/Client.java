@@ -16,9 +16,9 @@ public class Client {
     	
         try {
             try {
-            	System.out.print("IP connect to: ");
+            	System.out.print("IP Termination number:");
                 String ent = log.nextLine();
-                clientSocket = new Socket(ent, 4004); 
+                clientSocket = new Socket("192.168.0." + ent, 4004); 
                 
                 reader = new BufferedReader(new InputStreamReader(System.in));
                
