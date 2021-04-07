@@ -17,7 +17,7 @@ public class Client {
         try {
             try {
             	System.out.print("IP Server: ");
-               String ent = reader.readLine();
+               String ent = log.nextLine();
                 clientSocket = new Socket(ent, 4004); 
                 System.out.println("Connected");
                 reader = new BufferedReader(new InputStreamReader(System.in));
