@@ -46,6 +46,7 @@ class ServerSomthing extends Thread {
                         this.downService(); // харакири
                         break; // если пришла пустая строка - выходим из цикла прослушки
                     }
+
                     System.out.println("Echoing: " + word);
                     Server.story.addStoryEl(word);
                     for (ServerSomthing vr : Server.serverList) {
