@@ -16,10 +16,10 @@ public class Client {
     	
         try {
             try {
-            	System.out.print("IP Server: 192.168.0.4");
-               // String ent = log.nextLine();
-                clientSocket = new Socket("192.168.0.4", 4004); 
-                
+            	System.out.print("IP Server: ");
+               String ent = reader.readLine();
+                clientSocket = new Socket(ent, 4004); 
+                System.out.println("Connected");
                 reader = new BufferedReader(new InputStreamReader(System.in));
                
                 in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
