@@ -1,5 +1,6 @@
 package code;
 import java.net.*;
+import java.util.Scanner;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -138,6 +139,9 @@ public class Client {
      */
     
     public static void main(String[] args) {
-        new ClientSomthing(ipAddr, port);
+    	Scanner log = new Scanner(System.in);
+    	System.out.println("IP: ");
+    	String ent = log.nextLine();
+        new ClientSomthing(ent, port);
     }
 }
