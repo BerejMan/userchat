@@ -13,6 +13,7 @@ public class EncryptTBM {
 				src += (int) (Math.random() * 10);
 				
 			}
+			System.out.println("TEST KEY - " + src);
 		}
 		else {
 			src = GivedKey;

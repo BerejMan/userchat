@@ -14,14 +14,14 @@ public class Main {
 //		System.out.println("Key: " + src);
 //		BigInteger key = new BigInteger(src);
 //		
-//		BigInteger text = new BigInteger("997002999"); //997002999
+		String secKey =	"7497862570093155078048993106825419352620321757322123500108797889117088766862176738821133898533344076082882528415467825026288234688290898988885946657338195568033113271315739663324070719653839884463908712164962392605262732608831982589813201544828121645783195";
 		
 		Scanner log = new Scanner(System.in);
 		System.out.print("Enter text:");
 		String ent = log.nextLine();
 		System.out.println();
 
-		BigInteger key = new BigInteger("0");
+		BigInteger key = new BigInteger(secKey);
 		EncryptTBM obj = new EncryptTBM(key.toString());
 		String TheText = ent;
 		System.out.println("Text: " + TheText);
