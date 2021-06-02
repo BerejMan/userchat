@@ -14,7 +14,7 @@ public class DecryptMessage {
 	public static void main(String[] args) throws FileNotFoundException {
 		String PKey;
 		try {
-		File file = new File("/home/tbm/git/userchat/UserChat/src/code/Ec.txt");
+		File file = new File("");
 		FileReader fr = new FileReader(file);
 		BufferedReader reader = new BufferedReader(fr);
 		String line = reader.readLine();	
